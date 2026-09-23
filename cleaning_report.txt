@@ -1,0 +1,40 @@
+DATA CLEANING LOG
+==================
+Raw dataset shape: (515, 8)
+
+Missing values per column:
+OrderID         0
+OrderDate       0
+Category        0
+Region         26
+UnitsSold       0
+UnitPrice      28
+CustomerAge    26
+Revenue        28
+
+Duplicate rows: 15
+
+Removed 15 duplicate rows -> 500 rows remain
+
+Missing values after cleaning:
+OrderID        0
+OrderDate      0
+Category       0
+Region         0
+UnitsSold      0
+UnitPrice      0
+CustomerAge    0
+Revenue        0
+
+UnitsSold outliers detected via IQR (bounds -25.9-75.1): 8
+
+Cleaned dataset saved: outputs/cleaned_sales_data.csv | Final shape: (500, 8)
+
+
+KEY INSIGHTS
+------------
+- Best-selling category by revenue: Electronics ($800,483.11)
+- Top-performing region: North ($915,308.11)
+- Strongest sales month: December 2024 ($364,868.32)
+- Average order revenue: $6,618.22
+- Average customer age: 42.5 years
